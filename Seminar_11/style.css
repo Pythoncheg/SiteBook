@@ -4,7 +4,12 @@
 }
 
 body {
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 .center {
@@ -91,8 +96,8 @@ body {
 
 .item {
     border: 1px solid transparent;
-    width: 360px;
-    height: 260px;
+    /* width: 360px; */
+    /* height: 260px; */
 }
 
 .big {
@@ -167,15 +172,56 @@ body {
 .product {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: relative;
 }
 
-.product_flex {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
+.pinky {
     background-color: #F7E4E2;
-    ;
+}
+
+.product:hover .product_img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+
+.product:hover .product_add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.product_add {
+    position: absolute;
+    top: 188px;
+    left: 111px;
+    border: 1px solid #fff;
+    width: 139px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 11px;
+    color: #FFFFFF;
+}
+
+.product_add:hover {
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+.product_add:hover svg path {
+    fill: #F16D7F;
 }
 
 .show_all {
@@ -193,4 +239,58 @@ body {
     padding: 15px 39px;
     text-decoration: none;
     margin-bottom: 60px;
+}
+
+.all_product_link:hover {
+    border: 1px solid #ffffff;
+    background-color: #F26376;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        margin-left: calc(50% - 367px);
+        margin-right: calc(50% - 367px);
+    }
+
+    .cover_content {
+        margin-left: calc(50% - 378px);
+        margin-right: calc(50% - 378px);
+    }
+
+    .cover_img {
+        max-width: 386px;
+    }
+
+    .brand_logo {
+        margin-left: 39px;
+    }
+
+    .logo_title {
+        font-size: 44px;
+    }
+
+    .logo_subtitle {
+        font-size: 24px;
+    }
+
+    .menu_grid {
+        gap: 19px;
+    }
+
+    .menu_img,
+    .item {
+        max-width: 231px;
+    }
+
+    .menu_img_big,
+    .big {
+        max-width: 734px;
+        max-height: 116px;
+    }
+
+    .items_grid {
+        gap: 16px;
+        grid-template-columns: repeat(2, auto);
+    }
 }
