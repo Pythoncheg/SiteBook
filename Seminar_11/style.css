@@ -30,7 +30,9 @@ a {
 }
 
 .right_header {
+    display: flex;
     margin-right: 8px;
+    gap: 25px;
 }
 
 .left__header {
@@ -49,6 +51,7 @@ a {
     margin-left: calc(50% - 800px);
     margin-right: calc(50% - 800px);
     margin-bottom: 65px;
+
 }
 
 .brand_logo {
@@ -96,11 +99,47 @@ a {
 
 .item {
     border: 1px solid transparent;
-    /* width: 360px; */
-    /* height: 260px; */
+    width: 360px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    filter: brightness(0.7) sepia(0.1);
+}
+
+.menu_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu_title {
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.women {
+    background-image: url(img/women.png);
+}
+
+.men {
+    background-image: url(img/men.png);
+}
+
+.kids {
+    background-image: url(img/kid.png);
 }
 
 .big {
+    background-image: url(img/accesories.png);
+    background-position: center center;
     grid-column: span 3;
     grid-row: 2;
     width: 1140px;
@@ -110,6 +149,7 @@ a {
 
 .item:hover {
     border: 1px solid rgba(33, 22, 22, 0.70);
+    filter: none;
 }
 
 .items_flex {
@@ -281,6 +321,7 @@ a {
     .menu_img,
     .item {
         max-width: 231px;
+        height: 167px;
     }
 
     .menu_img_big,
@@ -292,5 +333,71 @@ a {
     .items_grid {
         gap: 16px;
         grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        margin-left: 8px;
+        margin-right: 8px;
+        /* margin-left: calc(50% - 179px);
+        margin-right: calc(50% - 179px); */
+    }
+
+    .right_header {}
+
+    .hiden_img {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .cover_content {
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: column;
+        height: 363px;
+        justify-content: center;
+        margin-bottom: 64px;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .cover_img {
+        position: absolute;
+        visibility: hidden;
+        width: 20px;
+    }
+
+    .brand_logo {
+        margin-left: 8px;
+    }
+
+    .menu_grid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+        margin: 64px;
+    }
+
+    .item {
+        /* max-width: 343px; */
+        max-width: 95vw;
+        max-height: 247px;
+    }
+
+    .big {
+        width: 343px;
+        max-height: 111px;
+
+    }
+
+    .items_grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_img {
+        max-width: 97vw;
     }
 }

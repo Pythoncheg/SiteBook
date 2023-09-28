@@ -1,0 +1,52 @@
+#check {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: -99999px;
+    visibility: hidden;
+}
+
+#check+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+#check+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+#check:checked+label::before {
+    border-color: hsl(157, 91%, 49%);
+    background-color: hsl(157, 91%, 49%);
+    background-image: url(https://fontawesome.com/icons/star?f=classic&s=regular);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-audio {
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    height: 100vh;
+    width: 100vw;
+}
