@@ -139,7 +139,6 @@ a {
 
 .big {
     background-image: url(img/accesories.png);
-    background-position: center center;
     grid-column: span 3;
     grid-row: 2;
     width: 1140px;
@@ -383,12 +382,13 @@ a {
     .item {
         /* max-width: 343px; */
         max-width: 95vw;
-        max-height: 247px;
+        min-height: 247px;
     }
 
     .big {
-        width: 343px;
-        max-height: 111px;
+        max-width: 95vw;
+        min-height: 111px;
+        background-image: url(img/Categories.png);
 
     }
 
