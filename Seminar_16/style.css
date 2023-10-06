@@ -1,0 +1,163 @@
+@-webkit-keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate-vert-center {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* a {
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: red;
+}
+
+.menu__link:active {
+    color: green;
+}
+
+.menu__list:first-child .menu__link {
+    text-decoration: underline;
+}
+
+.menu__list:last-child .menu__link {
+    font-weight: bold;
+}
+
+.menu__list:nth-child(3) .menu__link {
+    background-color: orange;
+} */
+/* .product {
+    width: 250px;
+    padding: 24px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.product__img {
+    background-color: forestgreen;
+    height: 150px;
+}
+
+.product_new::after {
+    content: 'new';
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.product_sale::before {
+    content: 'sale';
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+} */
+/* .icon:hover path {
+    fill: purple;
+}
+
+.icon:active path {
+    fill: yellow;
+}
+
+.icon path {
+    fill: aqua;
+}
+
+.item {
+    width: 150px;
+    height: 86px;
+    background-color: forestgreen;
+    border: 1px solid #000;
+    transition: all 1s;
+}
+
+.item_1:hover {
+    transform: translateX(50px);
+}
+
+.item_2:hover {
+    transform: translateX(38px);
+    scale: 2;
+}
+
+.item_3:hover {
+    transform: rotate(60deg) translate(50px, -200px);
+} */
+.octagon {
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.block {
+    background-color: green;
+    width: 150px;
+    height: 62px;
+    position: absolute;
+}
+
+.item_1 {
+
+    transform: rotate(90deg);
+}
+
+.item_2 {
+
+    transform: rotate(-45deg);
+}
+
+.item_3 {
+
+    transform: rotate(45deg);
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+
+.button {
+    animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
