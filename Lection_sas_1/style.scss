@@ -1,0 +1,27 @@
+$colorSelectSite: #4f2897;
+$widthSite: 1140px;
+
+a {
+    text-decoration: none;
+}
+
+.top-head_heading {
+    font-style: normal;
+    font-weight: 400px;
+    font-style: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+}
+
+.breadcrumbs__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumbs__link__page {
+    font-weight: 700;
+    color: $colorSelectSite;
+}
