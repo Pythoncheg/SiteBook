@@ -666,6 +666,140 @@ path {
     }
 }
 
+.product__description {
+    position: relative;
+    margin-top: -50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 130px;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 65px;
+
+        &__title {
+            color: $colorSelectSite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__devider {
+            margin-top: 12px;
+        }
+
+        &__subtitle {
+            margin-top: 12px;
+            color: #4D4D4D;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__text {
+            margin-top: 48px;
+            color: #5E5E5E;
+            max-width: 555px;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__price {
+            margin-top: 32px;
+            color: $colorSelectSite;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        margin-top: 65px;
+        padding-top: 65px;
+        width: 641px;
+        border-top: 1px solid #EAEAEA;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+
+        &__choose {
+            color: #6F6E6E;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 9px;
+
+        }
+
+        &__button_add_to_cart {
+            &__button path {
+                transition: .5s;
+            }
+
+            &__button {
+                transition: 0.5s;
+                margin-top: 48px;
+                margin-bottom: 64px;
+                padding-left: 24px;
+                width: 180px;
+                height: 48px;
+                border: 1px solid $colorSelectSite;
+                color: $colorSelectSite;
+                display: flex;
+                gap: 24px;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &__button:hover {
+                background-color: $colorSelectSite;
+                color: #FFF;
+            }
+
+            &__button:hover path {
+                fill: #fff;
+                transition: .5s;
+            }
+
+            &__button:active {
+                background-color: $colorSecondText;
+                color: #fff;
+                border-color: #fff;
+            }
+
+            &__button:active path {
+                fill: #fff;
+            }
+        }
+
+    }
+}
+
 @media (max-width: 1024px) {
     .center {
         margin-left: calc(50% - 367px);
