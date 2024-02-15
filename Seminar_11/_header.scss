@@ -1,0 +1,66 @@
+.header {
+    background-color: $backColorDark;
+    padding-bottom: 20px;
+    padding-top: 18px;
+    position: relative;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        margin-right: 8px;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button path {
+        fill: #E8E8E8;
+    }
+
+    &__button:hover path {
+        fill: $colorSelectSite;
+        transition: .5s;
+    }
+
+    &__basket {
+        position: relative;
+    }
+
+    &__add__count::after {
+        position: absolute;
+        right: -10px;
+        top: -5px;
+        content: '5';
+        color: white;
+        background-color: $colorSelectSite;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.logo__icon path {
+    fill: $colorSelectSite;
+
+    &:hover path {
+        filter: drop-shadow(3px 3px 6px $colorSelectSite);
+    }
+}

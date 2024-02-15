@@ -1,0 +1,60 @@
+#burger {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        right: 0;
+    }
+}
+
+.box-content {
+    overflow: hidden;
+}
+
+.nav {
+    background: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: $widthBurgerMenu;
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 79px;
+    right: -$widthBurgerMenu;
+    transition: right .3s;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 3;
+
+    &-style {
+        margin-top: 25px;
+
+        &__title {
+            margin-top: 25px;
+        }
+
+        &__items {
+            margin-top: 11px;
+            margin-left: 22px;
+        }
+    }
+
+    &__title {
+        color: $colorSelectSite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__items {
+        color: #6F6E6E;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
