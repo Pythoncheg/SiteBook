@@ -1,27 +1,41 @@
-$colorSelectSite: #4f2897;
-$widthSite: 1140px;
+@import 'var';
+@import 'mixins';
+
+
 
 a {
     text-decoration: none;
 }
 
-.top-head_heading {
-    font-style: normal;
-    font-weight: 400px;
-    font-style: 24px;
-    line-height: 29px;
-    color: $colorSelectSite;
+.nav {
+    display: flex;
+    gap: $selectGap;
+
+    &__link {
+        @include siteFontStyle;
+        text-decoration: none;
+    }
 }
 
-.breadcrumbs__link {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
+.container {
+    size: $sizeWidthPage;
 }
 
-.breadcrumbs__link__page {
-    font-weight: 700;
-    color: $colorSelectSite;
+.title {
+    &_part_1 {
+        color: $colorSelectSite;
+    }
+}
+
+.content {
+    @include displayFlex (end);
+    gap: $selectGap;
+
+
+    &__item {
+        width: $sizeWidthPage / 4;
+        background-color: $colorSelectSite;
+        height: 200px;
+        border: $selectBorderSite;
+    }
 }
