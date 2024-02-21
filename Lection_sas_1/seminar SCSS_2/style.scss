@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.box_content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.list {
+    &__summary {
+        margin-left: 30px;
+    }
+
+    &__summary::before {
+        content: '\2192';
+    }
+
+    &__summary::before [open] {
+        content: '\2193';
+    }
+}

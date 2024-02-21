@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.box_content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.list__summary {
+  margin-left: 30px;
+}
+.list__summary::before {
+  content: "→";
+}
+.list__summary::before [open] {
+  content: "↓";
+}/*# sourceMappingURL=style.css.map */

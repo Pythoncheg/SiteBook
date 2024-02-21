@@ -551,6 +551,7 @@ summary::-webkit-details-marker {
 .image__slide {
   background-color: #F7F7F7;
   height: 777px;
+  border: 1px solid #EAEAEA;
 }
 
 .carousel-inner {
@@ -887,7 +888,7 @@ summary::-webkit-details-marker {
   margin-bottom: 28px;
 }
 .footer_info {
-  background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(img/footer_bkgr.png);
+  background: linear-gradient(rgba(244, 244, 244, 0.7019607843), rgba(244, 244, 244, 0.7)), url(img/footer_bkgr.png);
   background-size: 100vw;
   background-position: left;
   background-repeat: no-repeat;
