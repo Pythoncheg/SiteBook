@@ -1,14 +1,17 @@
+@import 'base';
+
 .image__slide {
     background-color: $backSlideColor;
     height: 777px;
-    border: 1px solid #aeaeae;
+    border: 1px solid #eaeaea;
 }
 
 
 .carousel {
-    &-inner {
+    &-inner_product {
         display: flex;
         justify-content: center;
+        position: relative;
         right: 300px;
         top: 40px;
     }

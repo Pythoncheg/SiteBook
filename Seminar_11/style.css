@@ -25,6 +25,9 @@
   margin: 0;
   padding: 0;
 }
+*:hover {
+  transition: 0.3s;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -83,10 +86,12 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
 }
+.breadcrumbs__link:hover {
+  text-shadow: 2px 2px 5px #6F6E6E;
+}
 .breadcrumbs__link:first-child::after, .breadcrumbs__link:nth-child(n)::after {
-  margin-right: 4px;
-  margin-left: 4px;
-  content: " / ";
+  content: "/";
+  padding: 0 8px;
 }
 .breadcrumbs__link:last-child {
   color: #F16D7F;
@@ -94,6 +99,9 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.breadcrumbs__link:last-child:hover {
+  text-shadow: 2px 2px 5px #F16D7F;
 }
 .breadcrumbs__link:last-child::after {
   content: none;
@@ -548,15 +556,102 @@ summary::-webkit-details-marker {
     align-items: center;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+*:hover {
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.center {
+  margin-left: calc(50% - 570px);
+  margin-right: calc(50% - 570px);
+}
+
+.breadcrumbs {
+  background-color: #F8F3F4;
+  margin-bottom: 0;
+}
+.breadcrumbs__menu {
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumbs__left {
+  color: #F16D7F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.breadcrumbs__right {
+  display: flex;
+  justify-content: flex-end;
+}
+.breadcrumbs__link {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumbs__link:hover {
+  text-shadow: 2px 2px 5px #6F6E6E;
+}
+.breadcrumbs__link:first-child::after, .breadcrumbs__link:nth-child(n)::after {
+  content: "/";
+  padding: 0 8px;
+}
+.breadcrumbs__link:last-child {
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.breadcrumbs__link:last-child:hover {
+  text-shadow: 2px 2px 5px #F16D7F;
+}
+.breadcrumbs__link:last-child::after {
+  content: none;
+}
+
 .image__slide {
   background-color: #F7F7F7;
   height: 777px;
-  border: 1px solid #aeaeae;
+  border: 1px solid #eaeaea;
 }
 
-.carousel-inner {
+.carousel-inner_product {
   display: flex;
   justify-content: center;
+  position: relative;
   right: 300px;
   top: 40px;
 }
@@ -811,6 +906,92 @@ summary::-webkit-details-marker {
 }
 .product__description__footer__button_add_to_cart__button:active path {
   fill: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*:hover {
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+summary {
+  display: block;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.center {
+  margin-left: calc(50% - 570px);
+  margin-right: calc(50% - 570px);
+}
+
+.breadcrumbs {
+  background-color: #F8F3F4;
+  margin-bottom: 0;
+}
+.breadcrumbs__menu {
+  height: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumbs__left {
+  color: #F16D7F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.breadcrumbs__right {
+  display: flex;
+  justify-content: flex-end;
+}
+.breadcrumbs__link {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.breadcrumbs__link:hover {
+  text-shadow: 2px 2px 5px #6F6E6E;
+}
+.breadcrumbs__link:first-child::after, .breadcrumbs__link:nth-child(n)::after {
+  content: "/";
+  padding: 0 8px;
+}
+.breadcrumbs__link:last-child {
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.breadcrumbs__link:last-child:hover {
+  text-shadow: 2px 2px 5px #F16D7F;
+}
+.breadcrumbs__link:last-child::after {
+  content: none;
 }
 
 .filter-sort {

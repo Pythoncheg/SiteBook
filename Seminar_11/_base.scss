@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+
+    &:hover {
+        transition: .3s;
+    }
 }
 
 body {
@@ -62,13 +66,19 @@ summary::-webkit-details-marker {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+
+        &:hover {
+            text-shadow: 2px 2px 5px #6F6E6E;
+        }
+
     }
 
     &__link:first-child::after,
     &__link:nth-child(n)::after {
-        margin-right: 4px;
-        margin-left: 4px;
-        content: ' / ';
+        // margin-right: 4px;
+        // margin-left: 4px;
+        content: '/';
+        padding: 0 8px;
     }
 
     &__link:last-child {
@@ -77,6 +87,10 @@ summary::-webkit-details-marker {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+
+        &:hover {
+            text-shadow: 2px 2px 5px $colorSelectSite;
+        }
     }
 
     &__link:last-child::after {
