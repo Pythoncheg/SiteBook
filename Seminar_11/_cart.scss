@@ -1,0 +1,263 @@
+@import 'base';
+
+#input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cart {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+
+    &__right {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 360px;
+        margin-top: 17px;
+
+
+        &__title {
+            font-weight: 400;
+            font-size: 16px;
+            color: #222;
+        }
+
+        &__pay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            width: 360px;
+            height: 214px;
+            background-color: #f5f3f3;
+
+            &__info {
+                width: 273px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                flex-direction: column;
+                gap: 21px;
+                margin-top: 39px;
+                border-bottom: 0px solid #e2e2e2;
+                border-bottom-width: 1px;
+                // найти решение длинны рамки
+
+
+                &__sub {
+                    font-weight: 400;
+                    font-size: 11px;
+                    color: $colorSecondText;
+
+                    &::after {
+                        margin-left: 30px;
+                        content: '900$';
+
+                    }
+                }
+
+                &__grand {
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: $colorSecondText;
+                    margin-bottom: 21px;
+
+                    &::after {
+                        margin-left: 30px;
+                        content: '900$';
+                        color: $colorSelectSite;
+                    }
+                }
+            }
+
+            &__buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 273px;
+                height: 50px;
+                margin: 17px 43px 43px;
+                border: 1px solid $colorSelectSite;
+                font-weight: 400;
+                font-size: 16px;
+                color: $colorSelectSite;
+
+                &:hover {
+                    color: white;
+                    background-color: $colorSelectSite;
+                    transition: .4s;
+                }
+            }
+        }
+    }
+
+
+
+    &__item {
+        &__flex {
+            display: flex;
+            justify-content: start;
+            margin-bottom: 40px;
+            width: 652px;
+            box-shadow: (6px 4px 35px rgba(0, 0, 0, 0.26));
+        }
+
+        &__pic {
+            width: 262px;
+            height: 306px;
+            margin-right: 32px;
+
+        }
+
+        &__content {
+            &__flex {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__title {
+                font-family: 'Lato';
+                font-size: 24px;
+                font-weight: 400;
+                color: $colorText;
+                margin-top: 22px;
+                margin-bottom: 42px;
+                width: 200px;
+
+                &__box {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 340px;
+
+                }
+            }
+
+            &__text {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 22px;
+                color: $colorSecondText;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                &__price::after {
+                    margin-left: 5px;
+                    content: $currentPrice;
+                    color: $colorSelectSite;
+                }
+
+                &__color::after {
+                    margin-left: 5px;
+                    content: $currentColor;
+                    color: #6F6E6E;
+                }
+
+                &__size::after {
+                    margin-left: 5px;
+                    content: $selectSize;
+                    color: #6F6E6E;
+                }
+
+                &__quantity {
+                    &__flex {
+                        display: flex;
+                    }
+
+                    &__input {
+                        margin-left: 24px;
+                        width: 44px;
+                        height: 25px;
+                        text-align: center;
+                        border-color: #eaeaea;
+                    }
+                }
+            }
+        }
+    }
+
+    &__form {
+        margin-top: 30px;
+
+        &__line {
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            height: 45px;
+            width: 344px;
+            padding-left: 16px;
+            border: 1px solid rgb(164, 164, 164);
+        }
+
+        &__button {
+            font-weight: 400;
+            font-size: 11px;
+            color: $colorSecondText;
+            border: 1px solid rgb(164, 164, 164);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 35px;
+
+
+
+            &:hover {
+                background-color: $colorSelectSite;
+                color: white;
+                transition: .5s;
+            }
+        }
+
+    }
+
+    &__buttons {
+        width: 652px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 128px;
+        margin-top: 72px;
+
+        &__button {
+            width: 235px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #a4a4a4;
+            color: $colorText;
+
+            &:hover {
+                transition: .5s;
+                color: white;
+                background-color: $colorSelectSite;
+
+            }
+        }
+    }
+}
+
+.button {
+    &__delite {
+        margin-top: 28px;
+
+        &:hover path {
+            transition: .3s;
+            fill: $colorSelectSite;
+        }
+    }
+}

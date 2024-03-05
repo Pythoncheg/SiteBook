@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .text {
+  font-size: 16px;
+  font-weight: 300;
+  width: 300px;
+}
+
+.text::first-letter {
+  font-style: italic;
+  initial-letter: 3 3;
+  color: red;
+  margin-right: 10px;
+}
+
+# sourceMappingURL=style.css.map */
+/* .navigation {
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      &:hover {
+        .sub__menu {
+          display: block;
+        }
+      }
+
+      .sub__menu {
+        display: none;
+        position: absolute;
+        background-color: red;
+        padding: 10px;
+
+
+      }
+    }
+
+    /* li:hover {
+      .sub__menu {
+        display: block;
+      } */
+/* }
+} */
+/* .title {
+  color: red;
+  font-size: 48px;
+}
+
+@scope (.subtitle) {
+  .title {
+    color: green;
+  }
+} */
+@media (width < 768px) {
+  .title {
+    color: blue;
+  }
+}
+
+@media (width >=1024px) {
+  .title {
+    color: red;
+  }
+}
