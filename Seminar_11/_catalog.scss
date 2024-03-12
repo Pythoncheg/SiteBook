@@ -11,6 +11,9 @@
 }
 
 .filter {
+    &[open] {
+        box-shadow: (10px 30px 35px rgba(0, 0, 0, 0.21));
+    }
 
     padding-top: 13px;
     width: 360px;
@@ -21,7 +24,7 @@
     &__content {
         background-color: #fff;
         padding: 0 16px 16px;
-        box-shadow: (10px 30px 35px rgba(0, 0, 0, 0.21));
+
     }
 
     &[open] {
