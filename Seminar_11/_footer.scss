@@ -1,3 +1,5 @@
+@import 'index';
+
 .footer {
     &__top {
         background-color: $backColorDark;
@@ -43,15 +45,18 @@
     &_info {
         background: linear-gradient(#f4f4f4b3, rgba(244, 244, 244, 0.70)),
             url(img/footer_bkgr.png);
-        background-size: 100vw;
+        background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
         height: 448px;
 
+
         &_flex {
             display: flex;
             justify-content: flex-start;
+            align-items: center;
             gap: 327px;
+            height: 448px;
 
         }
 
@@ -94,7 +99,6 @@
             flex-direction: column;
 
             &__title {
-                margin-top: 150px;
                 color: $backColorDark;
                 text-align: center;
                 font-size: 24px;
@@ -116,7 +120,6 @@
 
 .about__img {
     width: 96px;
-    margin-top: 97px;
     margin-bottom: 30px;
 }
 
@@ -221,4 +224,20 @@ path {
 
 .link_button:hover path {
     fill: white;
+}
+
+@media (max-width: 1024px) {
+    .footer_info {
+        height: 530px;
+        padding-top: 64px;
+        background-size: cover;
+        background-position: 25%;
+        height: 693px;
+
+        &_flex {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+    }
 }

@@ -97,3 +97,28 @@ summary::-webkit-details-marker {
         content: none;
     }
 }
+
+@media (max-width: 1024px) {
+    .center {
+        margin-left: calc(50% - 367px);
+        margin-right: calc(50% - 367px);
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .breadcrumbs {
+        &__menu {
+            height: 148px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+}

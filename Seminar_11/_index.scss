@@ -63,6 +63,15 @@
         justify-content: center;
         flex-direction: column;
         transition: all 0.3s;
+
+        &__big {
+            background-image: linear-gradient(rgba(33, 22, 22, 0.70), rgba(33, 22, 22, 0.70)), url(img/accesories.png);
+            grid-column: span 3;
+            grid-row: 2;
+            width: 1140px;
+            height: 180px;
+            flex-shrink: 0;
+        }
     }
 
     &__item:hover {
@@ -82,14 +91,7 @@
         background-image: linear-gradient(rgba(33, 22, 22, 0.70), rgba(33, 22, 22, 0.70)), url(img/kid.png);
     }
 
-    .big {
-        background-image: linear-gradient(rgba(33, 22, 22, 0.70), rgba(33, 22, 22, 0.70)), url(img/accesories.png);
-        grid-column: span 3;
-        grid-row: 2;
-        width: 1140px;
-        height: 180px;
-        flex-shrink: 0;
-    }
+
 
     &__text {
         color: #FFF;
@@ -138,7 +140,7 @@
 
     &_grid {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
         gap: 30px;
         margin-bottom: 48px;
     }
@@ -288,13 +290,15 @@
         &__item {
             max-width: 231px;
             height: 167px;
+
+            &__big {
+                max-width: 734px;
+                max-height: 116px;
+            }
         }
     }
 
-    .big {
-        max-width: 734px;
-        max-height: 116px;
-    }
+
 
     .items_grid {
         gap: 16px;
@@ -306,12 +310,6 @@
         justify-content: center;
         align-items: center;
         gap: 48px;
-    }
-
-    .footer_info {
-        background-size: cover;
-        background-position: 25%;
-        height: 693px;
     }
 
     .footer_info_flex {
@@ -375,12 +373,14 @@
         &__item {
             max-width: 95vw;
             min-height: 247px;
+
+
+            &__big {
+                max-width: 362px;
+                min-height: 111px;
+            }
         }
 
-        .big {
-            max-width: 95vw;
-            min-height: 111px;
-        }
     }
 
     .items_grid {

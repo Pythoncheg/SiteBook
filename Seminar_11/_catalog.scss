@@ -249,3 +249,28 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .filter {
+        width: 50px;
+
+        &[open] {
+            width: 360px;
+        }
+
+        &__heading {
+            display: none;
+        }
+
+        &__summary svg {
+            width: 38px;
+            height: 25px;
+        }
+    }
+
+    .sort {
+        position: absolute;
+        left: 107px;
+        z-index: 9;
+    }
+}
