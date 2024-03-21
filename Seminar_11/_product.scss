@@ -321,3 +321,22 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .product {
+        &__description {
+            position: inherit;
+            width: auto;
+            margin-top: 0;
+            border-left: 0px;
+            border-right: 0px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .product__description__footer__choose {
+        font-size: 12px;
+    }
+}

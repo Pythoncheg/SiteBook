@@ -241,3 +241,13 @@ path {
         }
     }
 }
+
+@media (max-width: 767px) {
+    .footer__bottom {
+        &__flex {
+            &__copyrigth {
+                text-align: center;
+            }
+        }
+    }
+}
