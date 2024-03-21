@@ -252,7 +252,7 @@
 
 @media (max-width: 767px) {
     .filter {
-        width: 50px;
+        width: 40px;
 
         &[open] {
             width: 360px;
@@ -272,5 +272,13 @@
         position: absolute;
         left: 107px;
         z-index: 9;
+
+        &__heading {
+            font-size: 12px;
+        }
+
+        &__summary {
+            gap: 9px;
+        }
     }
 }

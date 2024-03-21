@@ -18,6 +18,10 @@ input::-webkit-inner-spin-button {
         width: 360px;
         margin-top: 17px;
 
+        &__adress {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__title {
             font-weight: 400;
@@ -258,6 +262,94 @@ input::-webkit-inner-spin-button {
         &:hover path {
             transition: .3s;
             fill: $colorSelectSite;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .cart {
+        flex-direction: column;
+        justify-content: center;
+        gap: 64px;
+
+        &__item {
+            &__flex {
+                max-width: 95vw;
+            }
+        }
+
+        &__buttons {
+            margin-bottom: 0;
+            align-items: center;
+            width: auto;
+            gap: 48px;
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__right {
+            margin-top: 0;
+            margin-bottom: 126px;
+            flex-direction: row;
+            gap: 15px;
+
+            &__adress {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cart {
+        &__item {
+            &__flex {
+                max-width: 95vw;
+            }
+
+            &__pic {
+                width: 143px;
+                height: 190px;
+            }
+
+            &__content {
+                &__title {
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                    width: 140px;
+
+                    &__box {
+                        width: 180px;
+                        justify-content: space-between;
+                    }
+                }
+
+                &__text {
+                    font-size: 14px;
+
+                    &__quantity__input {
+                        width: 24px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        &__buttons {
+            margin-top: 0;
+            gap: 9px;
+
+            &__button {
+                font-size: 12px;
+                width: 175px;
+                height: 33px;
+            }
         }
     }
 }

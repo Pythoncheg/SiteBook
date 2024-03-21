@@ -152,6 +152,7 @@
     align-items: center;
     justify-content: flex-end;
     position: relative;
+    width: 360px;
 
     &__title_and_price {
         padding: 24px 16px;
@@ -252,6 +253,13 @@
 }
 
 @media (max-width: 1024px) {
+    .items {
+        &_grid {
+            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        }
+    }
+
     .center {
         margin-left: calc(50% - 367px);
         margin-right: calc(50% - 367px);
@@ -300,10 +308,10 @@
 
 
 
-    .items_grid {
-        gap: 16px;
-        grid-template-columns: repeat(2, auto);
-    }
+    // .items_grid {
+    //     gap: 16px;
+    //     
+    // }
 
     .footer__top_flex {
         flex-direction: column;
@@ -330,7 +338,7 @@
     }
 
     .nav {
-        z-index: 1;
+        z-index: 15;
     }
 
     .hiden_img {

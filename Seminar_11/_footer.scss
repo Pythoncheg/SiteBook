@@ -226,13 +226,21 @@ path {
     fill: white;
 }
 
+.footer__bottom {
+    &__flex {
+        &__copyrigth {
+            text-align: center;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .footer_info {
-        height: 530px;
+        height: 590px;
         padding-top: 64px;
         background-size: cover;
         background-position: 25%;
-        height: 693px;
+        // height: 693px;
 
         &_flex {
             flex-direction: column;
@@ -243,11 +251,9 @@ path {
 }
 
 @media (max-width: 767px) {
-    .footer__bottom {
-        &__flex {
-            &__copyrigth {
-                text-align: center;
-            }
-        }
+    .footer_info {
+        height: 600px;
+
+
     }
 }
